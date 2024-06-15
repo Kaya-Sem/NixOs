@@ -117,6 +117,7 @@ git
     xclip
     flutter
     dart
+    cargo
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
