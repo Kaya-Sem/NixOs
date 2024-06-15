@@ -122,6 +122,7 @@ git
     lazygit
     julia
   rustc
+  rustup
   ];
 
   fonts.packages = with pkgs; [
