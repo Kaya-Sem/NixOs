@@ -121,6 +121,7 @@ git
     fd
     lazygit
     julia
+  rustc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
