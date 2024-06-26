@@ -78,6 +78,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
+      bat
       zathura
       yazi
       alacritty
