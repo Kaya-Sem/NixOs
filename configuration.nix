@@ -94,6 +94,7 @@ hardware.bluetooth.enable = true; # enables support for Bluetooth
       nodejs
       obsidian
       fzf
+      cargo
       ripgrep
       texlivePackages.latexmk
     texliveFull
@@ -121,7 +122,6 @@ hardware.bluetooth.enable = true; # enables support for Bluetooth
     xclip
     flutter
     dart
-    cargo
     fd
     lazygit
     julia
