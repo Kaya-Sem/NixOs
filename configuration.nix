@@ -88,6 +88,7 @@ discord
 bitwarden
 btop
 git
+spotify
     libgcc
     nodejs
     obsidian
