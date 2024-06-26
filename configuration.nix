@@ -81,20 +81,21 @@ hardware.bluetooth.enable = true; # enables support for Bluetooth
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
-yazi
-alacritty
-neovim
-discord 
-bitwarden
-btop
-git
-spotify
-    libgcc
-    nodejs
-    obsidian
-    fzf
-    ripgrep
-    texlivePackages.latexmk
+      yazi
+      alacritty
+      neovim
+      discord 
+      bitwarden
+      btop
+      git
+      spotify
+      libgcc
+      vscode
+      nodejs
+      obsidian
+      fzf
+      ripgrep
+      texlivePackages.latexmk
     texliveFull
     jetbrains.idea-ultimate
     ];
@@ -107,13 +108,14 @@ spotify
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [
     gnumake
     vim
     wget
     unzip
+    gcc
     libgcc
+    gccgo14
     zig
     python3
     xclip
@@ -123,9 +125,9 @@ spotify
     fd
     lazygit
     julia
-  rustc
-  rustup
-  lua
+    rustc
+    rustup
+    lua
   ];
 
   fonts.packages = with pkgs; [
