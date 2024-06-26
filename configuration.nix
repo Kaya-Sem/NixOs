@@ -125,6 +125,7 @@ spotify
     julia
   rustc
   rustup
+  lua
   ];
 
   fonts.packages = with pkgs; [
