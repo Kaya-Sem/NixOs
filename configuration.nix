@@ -7,16 +7,17 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
-hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -45,9 +46,9 @@ hardware.bluetooth.enable = true; # enables support for Bluetooth
 
   # Configure keymap in X11
   #services.xserver = {
-   # layout = "be";
- #   xkbVariant = "";
-#  };
+  # layout = "be";
+  #   xkbVariant = "";
+  #  };
 
   # Configure console keymap
   console.keyMap = "be-latin1";
@@ -84,7 +85,7 @@ hardware.bluetooth.enable = true; # enables support for Bluetooth
       yazi
       alacritty
       neovim
-      discord 
+      discord
       bitwarden
       btop
       git
@@ -97,8 +98,8 @@ hardware.bluetooth.enable = true; # enables support for Bluetooth
       cargo
       ripgrep
       texlivePackages.latexmk
-    texliveFull
-    jetbrains.idea-ultimate
+      texliveFull
+      jetbrains.idea-ultimate
     ];
   };
 
@@ -131,17 +132,17 @@ hardware.bluetooth.enable = true; # enables support for Bluetooth
   ];
 
   fonts.packages = with pkgs; [
-  noto-fonts
-  noto-fonts-cjk
-  noto-fonts-emoji
-  liberation_ttf
-  fira-code
-  fira-code-symbols
-  mplus-outline-fonts.githubRelease
-  dina-font
-  proggyfonts
+    noto-fonts
+    noto-fonts-cjk
+    noto-fonts-emoji
+    liberation_ttf
+    fira-code
+    fira-code-symbols
+    mplus-outline-fonts.githubRelease
+    dina-font
+    proggyfonts
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
-];
+  ];
 
 
   # Some programs need SUID wrappers, can be configured further or are
