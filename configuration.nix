@@ -80,6 +80,7 @@
       kdePackages.kate
       bat
       zathura
+      vlc
       yazi
       alacritty
       neovim
