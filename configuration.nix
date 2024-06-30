@@ -78,6 +78,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
+      qbittorrent
       bat
       zathura
       vlc
