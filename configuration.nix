@@ -111,6 +111,7 @@
 
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
+    luajitPackages.luarocks-nix
     auto-cpufreq
     gnumake
     vim
