@@ -111,6 +111,7 @@
 
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
+    auto-cpufreq
     gnumake
     vim
     wget
@@ -131,18 +132,24 @@
     lua
   ];
 
-  fonts.packages = with pkgs; [
-    noto-fonts
-    noto-fonts-cjk
-    noto-fonts-emoji
-    liberation_ttf
-    fira-code
-    fira-code-symbols
-    mplus-outline-fonts.githubRelease
-    dina-font
-    proggyfonts
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
-  ];
+  services.auto-cpufreq.enable = true;
+  services.auto-cpufreq.settings = { };
+
+  fonts.packages = with pkgs;
+    [
+      noto-fonts
+      noto-fonts-cjk
+      noto-fonts-emoji
+      liberation_ttf
+      fira-code
+      fira-code-symbols
+      mplus-outline-fonts.githubRelease
+      dina-font
+      proggyfonts
+      (nerdfonts.override {
+        fonts = [ "FiraCode" ];
+      })
+    ];
 
 
   # Some programs need SUID wrappers, can be configured further or are
