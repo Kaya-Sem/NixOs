@@ -89,8 +89,6 @@
       fzf
       cargo
       ripgrep
-      texlivePackages.latexmk
-      texliveFull
       jetbrains.idea-ultimate
     ];
   };
@@ -114,6 +112,8 @@
     gcc
     libgcc
     gccgo14
+    texlivePackages.latexmk
+    texliveFull
     zig
     python3
     xclip
