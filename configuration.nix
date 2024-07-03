@@ -105,6 +105,7 @@
   environment.systemPackages = with pkgs; [
     luajitPackages.luarocks-nix
     jdk
+    android-tools
     auto-cpufreq
     gnumake
     vim
