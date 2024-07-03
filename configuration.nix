@@ -112,8 +112,6 @@
     gcc
     libgcc
     gccgo14
-    texlivePackages.latexmk
-    texliveFull
     zig
     python3
     xclip
